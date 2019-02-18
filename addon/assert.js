@@ -15,9 +15,8 @@ let errorProps = [
 export default function assert(bool, text) {
   if (typeof bool === 'string' && !text) {
     throw new MirageError(bool);
-  }
 
-  if (!bool) {
+  } else if (!bool) {
     throw new MirageError(text.replace(/^ +/gm, '') || 'Assertion failed');
   }
 }

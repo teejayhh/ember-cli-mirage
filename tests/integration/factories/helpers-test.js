@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { Model, Factory, belongsTo, hasMany, trait, association } from 'ember-cli-mirage';
 import Server from 'ember-cli-mirage/server';
 
-module('Integration | Server | Factories | helpers', function(hooks) {
+module('Integration | Factories | helpers', function(hooks) {
   hooks.afterEach(function() {
     this.server.shutdown();
   });
